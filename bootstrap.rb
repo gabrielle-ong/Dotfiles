@@ -69,7 +69,7 @@ class Bootstrap
     end
 
     def symlink_extras!
-      symlink_folder("IMDB\ this.workflow", "#{Dir.home}/Library/Services/IMDB\ this.workflow")
+      # symlink_folder("IMDB\ this.workflow", "#{Dir.home}/Library/Services/IMDB\ this.workflow")
       symlink_folder("HexColorPicker.colorPicker", "#{Dir.home}/Library/ColorPickers/HexColorPicker.colorPicker")
     end
 
@@ -77,7 +77,7 @@ class Bootstrap
       symlink_dotfiles!
       disable_chrome_swiping!
       symlink_sublime_directory!
-      symlink_alfred!
+      # symlink_alfred!
       symlink_oh_my_zsh!
       symlink_extras!
       copy_iterm_profile!
@@ -93,6 +93,7 @@ class Bootstrap
 
     def username
       `whoami`
+      printf " %15s -> %s\n", src, dest.gsub!("/Users/#{username}", '~')
     end
 
     def file_exists? (file)

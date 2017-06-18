@@ -1,8 +1,4 @@
 [user]
-	name = Bradley Priest
-	email = bradleypriest@gmail.com
-[github]
-	user = 8c64bb7a0706b418f4ac52e5881a8156
 [color]
 	ui = auto
 [advice]
@@ -11,6 +7,7 @@
 	whitespace = trailing-space,space-before-tab
 	excludesfile = ~/.gitignore_global
 	trustctime = false
+	editor = vi
 [diff]
 	renames = copies
 [branch]
@@ -32,3 +29,8 @@ protocol = https
 	smudge = git-lfs smudge %f
 	required = true
 	clean = git-lfs clean %f
+[credential]
+	helper = osxkeychain
+[user]
+	email = gabrielleonghuimin@gmail.com
+	name = gabrielle-ong

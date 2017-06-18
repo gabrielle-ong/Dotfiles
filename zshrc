@@ -119,3 +119,4 @@ function nom {
 function gcoo() {
   git branch | grep $1 | xargs -n 1 git checkout
 }
+export PATH=$PATH:$HOME/bin
